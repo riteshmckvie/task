@@ -11,6 +11,10 @@ import org.springframework.cloud.task.configuration.EnableTask;
 public class TaskApplication {
 
 	public static void main(String[] args) {
+		for (String s : args)
+        {
+			System.out.println("args  ............."+s);
+        }
 		SpringApplication.run(TaskApplication.class, args);
 	}
 
